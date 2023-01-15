@@ -4,7 +4,7 @@
 - `sudo apt update`
 - `sudo apt install nginx`
 - `sudo systemctl status nginx`
-### Confirm that Nginx sgiterver can respond to requests from the Internet.
+### Confirm that Nginx server can respond to requests from the Internet.
 ![NginX server](/images/nginx-server.jpg)
 
 ## STEP 2 — Installing mysql
@@ -19,14 +19,14 @@
 - `sudo mysql -p`
 ![MySQL Installation](/images/mysql.jpg)
 
-## STEP 3 – Installingcd PHP
+## STEP 3 – Installing PHP
 ### Install PHP
 - `sudo apt install php-fpm php-mysql`
 
 ## Step 4 — Configuring Nginx to Use PHP Processor
 ### Create root web directory domain
 - `sudo mkdir /var/www/projectLEMP` 
-### assign ownership
+### Assign ownership
 - `sudo chown -R $USER:$USER /var/www/projectLEMP`
 ### Open new configuration file in Nginx’s sites-available directory
 - `sudo nano /etc/nginx/sites-available/projectLEMP`
