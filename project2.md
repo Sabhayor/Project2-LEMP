@@ -50,7 +50,6 @@
 ## Step 6 — Retrieving data from MySQL database with PHP
 ### First, connect to the MySQL console using the root account:
 - `sudo mysql`
-![Connect to database](/images/connect_database.jpg)
 ### Create a new database
 - `mysql> CREATE DATABASE `example_database`;`
 ### create a new user and grant him full privileges
@@ -59,16 +58,12 @@
 - `GRANT ALL ON example_database.* TO 'example_user'@'%';`
 ### exit the MySQL shell
 - `exit the MySQL shell`
-![Create database & user](/images/create-database%26user.jpg)
 ###  Test if the new user has the proper permissions by logging in to the MySQL console again
 -  `mysql -u example_user -p`
-![database](/images/database.jpg)
-
 ### Create a test table named todo_list
 - `mysql> INSERT INTO example_database.todo_list (content) VALUES ("My first important item");`
 ### Confirm that the data was successfully saved to your table
-![Database](/images/confirm_-database.jpg)
-![Retrieving data](/images/Retrieving-data-from-mysql-DB.jpg)
+![Retrieving data](/images/Retrieving-data-from-mysql-DB-with-php.jpg)
 
 
 
